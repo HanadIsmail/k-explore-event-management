@@ -1,0 +1,52 @@
+@media (max-width: 680px) {
+  .container { width: min(100% - 32px, 560px); }
+  .site-header { height: 70px; }
+  .nav { gap: 12px; }
+  .brand { font-size: 19px; }
+  .nav-actions .btn { display: none; }
+  .menu-toggle {
+    display: flex; width: 40px; height: 40px; margin-left: auto; border: 1px solid var(--line);
+    border-radius: 10px; background: var(--surface); flex-direction: column; justify-content: center;
+    align-items: center; gap: 5px;
+  }
+  .menu-toggle span { width: 17px; height: 2px; background: var(--text); border-radius: 2px; }
+  .nav-links {
+    display: none; position: absolute; top: 69px; left: 0; right: 0; padding: 18px 24px 22px;
+    background: var(--surface); border-bottom: 1px solid var(--line); flex-direction: column;
+    align-items: flex-start; gap: 18px;
+  }
+  .nav-links.open { display: flex; }
+  .hero { display: flex; flex-direction: column; align-items: stretch; padding-block: 55px 25px; gap: 20px; }
+  .hero h1 { font-size: clamp(44px, 12vw, 62px); letter-spacing: -3px; }
+  .hero-description { font-size: 15px; }
+  .hero-search { max-width: none; }
+  .hero-search .btn { padding: 12px; }
+  .hero-art { height: 310px; transform: none; }
+  .hero-feature-image { height: 250px; width: 70%; }
+  .orbit-one { width: 300px; height: 210px; }
+  .orbit-two { width: 340px; height: 250px; }
+  .floating-top { top: 22px; right: 0; }
+  .floating-bottom { bottom: 15px; left: 0; }
+  .trust-strip { align-items: flex-start; flex-direction: column; }
+  .trust-strip > div { gap: 12px; }
+  .section { padding-block: 65px; }
+  .section-heading { align-items: flex-start; flex-direction: column; margin-bottom: 24px; }
+  .section-heading h2 { font-size: 30px; }
+  .event-grid { grid-template-columns: 1fr; }
+  .event-image { height: 220px; }
+  .category-section { padding: 65px 0; }
+  .category-grid { gap: 12px; }
+  .category-card { min-height: 155px; padding: 17px; }
+  .upcoming-item { grid-template-columns: 55px 1fr; gap: 12px; padding: 13px; }
+  .upcoming-item > a { grid-column: 2; }
+  .cta-section { padding: 38px 25px; min-height: 280px; margin-bottom: 55px; }
+  .cta-section h2 { font-size: 31px; }
+  .cta-decoration { display: none; }
+  .footer-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
+@media (max-width: 380px) {
+  .hero-search { gap: 5px; padding-left: 10px; }
+  .hero-search input { font-size: 11px; }
+  .hero-search .btn { font-size: 11px; }
+  .category-grid { grid-template-columns: 1fr 1fr; }
+}

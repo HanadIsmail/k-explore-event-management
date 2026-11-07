@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore upcoming events on K Explore.">
+<title>Explore Events — K Explore</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/pages.css">
+<script defer src="js/events.js"></script><script defer src="js/theme.js"></script><script defer src="js/main.js"></script><script defer src="js/explorer.js"></script>
+</head><body>
+<header class="site-header"><nav class="nav container" aria-label="Main navigation">
+<a class="brand" href="index.html"><span class="brand-mark">K</span><span>K<span class="brand-accent">Explore</span></span></a>
+<button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+<div class="nav-links" id="nav-links"><a href="index.html">Home</a><a class="active" href="events.html">Explore events</a><a href="index.html#about">About</a></div>
+<div class="nav-actions"><button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">☾</button><a class="btn btn-small btn-primary" href="#event-results">Browse events <span>↗</span></a></div>
+</nav></header>
+<main class="container page-main">
+<section class="page-intro"><div class="eyebrow">THE GOOD STUFF IS HERE</div><h1>Explore <span class="gradient-text">events.</span></h1><p>Find your next favorite experience. Search, filter, and make it happen.</p></section>
+<section class="filter-panel" aria-label="Filter events">
+<label class="filter-search"><span>⌕</span><input id="event-search" type="search" placeholder="Search by event name or keyword..." aria-label="Search events"></label>
+<select id="category-filter" aria-label="Filter by category"><option value="All">All categories</option><option>Technology</option><option>Music</option><option>Business</option><option>Learning</option><option>Arts</option><option>Sports</option></select>
+<select id="sort-filter" aria-label="Sort events"><option value="date">Soonest first</option><option value="name">Name A–Z</option></select>
+</section>
+<div class="results-heading"><p id="results-count" aria-live="polite">Loading events...</p><button class="clear-filters" id="clear-filters" type="button">Clear filters ↺</button></div>
+<section class="event-grid event-grid-all" id="event-results"></section>
+<div class="empty-state hidden" id="empty-state"><span>⌕</span><h3>No events found</h3><p>Try another search or clear your filters.</p><button class="btn btn-primary" id="empty-clear" type="button">Clear filters</button></div>
+</main>
+<footer class="footer"><div class="container footer-inner"><a class="brand" href="index.html"><span class="brand-mark">K</span><span>K<span class="brand-accent">Explore</span></span></a><p>Discover. Connect. Experience.</p><span>© <span id="year"></span> K Explore.</span></div></footer>
+</body></html>
