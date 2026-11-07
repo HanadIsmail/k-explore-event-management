@@ -1,6 +1,7 @@
 # K Explore — Complete College Project
 
 A responsive event management and discovery website built with HTML5, CSS3 and vanilla JavaScript.
+## Live Demo Link : https://explore-event-management.vercel.app/
 
 ## Features
 - Responsive homepage with featured and upcoming events
